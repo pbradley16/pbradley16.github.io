@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Image 2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h2>Image 2</h2>
+    <div class="nav"><a href="gallery.html">Back</a>
+        <br>
+        <br>
+        <img src='nh2.jpg' width="720dpi";height="1020px";alt="nh2"></div>
+    <div class="caption">
+        <p>description</p>
+        
+        
+    </div>
+</body>
+</html>
