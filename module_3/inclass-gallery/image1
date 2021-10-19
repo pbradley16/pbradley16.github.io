@@ -11,7 +11,7 @@
     <div class="nav"><a href="gallery.html">Back</a>
         <br>
         <br>
-        <img src='images/nh1.jpg' width="720dpi";height="1020px";alt="nh1"></div>
+        <img src='nh1.jpg' width="720dpi";height="1020px";alt="nh1"></div>
     <div class="caption">
         <p>description</p>
         
