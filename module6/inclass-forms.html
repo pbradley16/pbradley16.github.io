@@ -45,11 +45,25 @@ border:2px solid black;
   </head>
 <body>
 <div>
-<form>
+<form action="https://idesstage2.bc.edu/class/results.php" method="post">
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname"><br>
   <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname">
+  <input type="text" id="lname" name="lname"><br>
+  <label for="email">Enter your email:</label><br>
+  <input type="email" id="email" name="email" required><br>
+  <p> Favorite Ice Cream </p>
+  <select id="flavors" name="flavors">
+  <option value="vanilla">vanilla</option>
+  <option value="chocolate">chocolate</option>
+  <option value="strawberry">strawberry</option>
+  <option value="coffee">coffee</option>
+  <option value="shrimp">shrimp</option>
+  <option value="pickle">pickle</option>
+</select>
+   <h2>What do you want to do with your life?</h2>
+    <textarea name="message" rows="3" cols="30">
+  <input type="submit" value="Submit"
 </form>
 </div>
   </body>
