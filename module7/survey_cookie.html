@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+    <style>
+    body {
+font-size: 1.3em;
+background-color: beige;
+
+}
+content{
+width:90%;
+margin:auto;
+}
+
+h1 {
+text-align:center;
+}
+
+form {
+margin-left:5%;
+}
+input {
+margin-bottom:2%;
+}
+input#submit {
+display:block;
+background-color:#33ff99;
+font-weight:bold;
+padding: 20px;
+font-size: 1.5em;
+}
+
+select option {
+font-size: 1.75em;
+width: 150px;
+}
+    </style>
+</head>
+
+<body>
+     <h1>Music Survey</h1>
+<form action="https://idesstage2.bc.edu/class/results.php" method="post">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email" value=""><br><br>
+  
+ <fieldset>
+    <legend>Select Your Favorite Type of Music</legend>
+    </fieldset>
+
+  <input type="radio" id="pop" name="fav_music" value="Pop">
+  <label for="pop">Pop</label><br>
+  <input type="radio" id="classical" name="fav_music" value="Classical">
+  <label for="classical">Classical</label><br>
+  <input type="radio" id="rock" name="fav_music" value="Rock">
+  <label for="rock">Rock</label><br>
+  <input type="radio" id="folk" name="fav_music" value="Folk">
+  <label for="folk">Folk</label><br>
+  <input type="radio" id="rap" name="fav_music" value="Rap">
+  <label for="rap">Rap</label><br>
+  <input type="radio" id="other" name="Other" value="Other">
+  <label for="rock">Other</label> 
+    
+    <fieldset>
+    <legend>How often do you purchase CD's?</legend>
+    </fieldset>
+
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Weekly">
+  <label for="cd1"> Weekly</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="A few per year">
+  <label for="cd2"> A few per year</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Monthly">
+  <label for="cd3"> Monthly</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Never">
+  <label for="cd4"> Never</label>
+   
+    <h2>Select the locations you listen to music:</h2>
+    
+<select id="locations" name="locations">
+  <option value="home">At Home</option>
+  <option value="work">At Work</option>
+  <option value="car">In the Car</option>
+  <option value="school">At School</option>
+</select>
+    <h2>What role does music play in your life?</h2>
+    <textarea name="message" rows="3" cols="30">
+
+</textarea>
+    <br>
+    <input type="submit" id ="submit" value="send survey">
+    <script>function  onLoad setCookie(fname, fvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires="+ d.toUTCString();
+  document.cookie = fname + "=" + fvalue + ";" + expires + ";path=/";
+}
+    </script>
+    </form>
+    </body>
+</html>
