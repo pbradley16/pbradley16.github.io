@@ -15,12 +15,18 @@
 
 
     </style>
+    <script>let toggleDark = () => {
+  let result = document.documentElement.classList.toggle("dark");
+  localStorage.theme = result ? "dark" : "light";
+};
+      </script>
  </head>
 
  <body>
 <div class="header">
   <h1><img src="images/logo.png"></h1>
   <h2>Paul Bradley Electric</h2>
+   
 </div>
 
 <div class="topnav">
@@ -28,45 +34,55 @@
   <a href="heatpump.html">Heat Pumps</a>
   <a href="smart_home.html">Smart Home</a>
   <a href="index.html" style="float:right">Main</a>
+  
+    
 </div>
 
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <h2>About Us</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Full service Electrical Contractor specializing in smart home technologies and HVAC controls</p>
+      <h2>Electrical Contractor in Winchester, MA</h2>
+      <h3 style="font-style: italic">Full service Electrical Contractor specializing in smart home technologies and HVAC controls since 2003</h3>
+        <h4 style="font-style: italic">pb@paulbradleyelectric.com<br>781-795-6235</h4>
+    
+        
     </div>
     <div class="card">
-      <h2>Gallery</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+   
+      <div class="fakeimg" style="height:500px;"><img style="padding-right: 2px"src="images/panels.jpg"><img style="float: right" src="images/panel.jpg"></div>
+         
+      
     </div>
   </div>
   <div class="rightcolumn">
     <div class="card">
-      <h2>About Us</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h3>Testimonials</h3>
+      <div class="fakeimg"><p><img src="images/Review1.PNG" alt="Review1"></p></div>
+      <div class="fakeimg"><p><img src="images/Review2.PNG" alt="Review2"></p></div>
+      <div class="fakeimg"><p><img src="images/Review3.PNG" alt="Review3"></p></div>
+    </div>
+      <div class="card">
+      <h2>For more Information on:</h2>
+          <h3><a href="solar.html">Solar</a></h3>
+          <h3><a href="heatpump.html">Heat Pumps and Air Conditioning</a></h3>
+          <h3><a href="smart_home.html">Smart Home Technologies</a></h3>
+
     </div>
     <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-    </div>
-    <div class="card">
-      <h3><a href="contact_form.html">Get a Quote</a> </h3>
+      <h3><a href="contact_form.html">Request a Quote</a> </h3>
     </div>
   </div>
 </div>
 
 <div class="footer">
-  <h2>Contact</h2>
+ <h2>Contact</h2>
+    <h5 style="text-align: center">Paul Bradley Electric<br>
+    8 Johnson Rd Winchester, MA 01890<br>
+    781-795-6235<br>
+   pb@paulbradleyelectric.com<br>
+        MA Master Electrician Lic. No.20027A<br>
+        MA Construction Supervisor No.CS-091066</h5>
+    <button  style="float: right"; onclick="toggleDark()">Dark Mode</button> 
 </div>
 
 
