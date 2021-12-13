@@ -10,11 +10,12 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <style>
-           <!-- internal/embedded styles here -->
 
-
-    </style>
+       <script>let toggleDark = () => {
+  let result = document.documentElement.classList.toggle("dark");
+  localStorage.theme = result ? "dark" : "light";
+};
+      </script>
  </head>
 
  <body>
@@ -37,39 +38,37 @@
     <div class="card">
       <h2>Heat Pumps</h2>
       <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;"><img src="images/heatpump.jpg"></div>
-      <p>How does Solar Work?</p>
+      <div class="fakeimg" style="height:320px;"><img src="images/heatpump.jpg"></div>
+      </div>
+      <div class="card">
      <iframe width="864" height="486" src="https://www.youtube.com/embed/PIulbHyK0bc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-      <div class="card">
-      <h2>Why Solar?</h2>
-      <h5>Solar Questions answered</h5>
-      <div class="fakeimg" style="height:200px;"></div>
-      <p>How does Solar Work?</p>
-      <iframe width="820" height="462" src="https://www.youtube.com/embed/0elhIcPVtKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+     
   </div>
   <div class="rightcolumn">
     <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        <h3>Check out our Partner:</h3>
+        <h2 style="font-style: italic">PCS HVAC and Controls</h2>
+      <div class="fakeimg" style="height:200px;"><img src="images/pcs.png">
+      <h4 style= "float: right";><a href="pcunniffeservice.com">PCS HVAC and Controls</a></h4>
+        </div>
     </div>
+    
     <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-    </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
+      <h3><a href="contact_form.html">Get a Quote</a> </h3>
     </div>
   </div>
 </div>
 
 <div class="footer">
-  <h2>Footer</h2>
+  <h2>Contact</h2>
+    <h5 style="text-align: center">Paul Bradley Electric<br>
+    8 Johnson Rd Winchester, MA 01890<br>
+    781-795-6235<br>
+   pb@paulbradleyelectric.com<br>
+        MA Master Electrician Lic. No.20027A<br>
+        MA Construction Supervisor No.CS-091066</h5>
+    <button  style="float: right"; onclick="toggleDark()">Dark Mode</button> 
 </div>
 
 
