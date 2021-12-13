@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Paul Bradley Electric-Solar</title>
+    <title>Paul Bradley Electric-Smart Home</title>
     <meta charset="UTF-8">
    <meta name="description" content="Paul Bradley Electric">
    <meta name="keywords" content="electrical contractor, electrician,solar, heat pumps, hvac, controls, smart home, ev charger">
@@ -10,11 +10,12 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <style>
-           <!-- internal/embedded styles here -->
 
-
-    </style>
+               <script>let toggleDark = () => {
+  let result = document.documentElement.classList.toggle("dark");
+  localStorage.theme = result ? "dark" : "light";
+};
+      </script>
  </head>
 
  <body>
@@ -35,42 +36,49 @@
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <h2>Why Solar?</h2>
-      <h5>Solar Questions answered</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>How does Solar Work?</p>
-      <iframe width="820" height="462" src="https://www.youtube.com/embed/0elhIcPVtKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h2>What Is a Smart Home?</h2>
+      
+      <div class="fakeimg" style="height:416px;"> <p><iframe width="740" height="416" src="https://www.youtube.com/embed/IC0mkHh7MaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></div>
+      
+      
     </div>
     <div class="card">
-      <h2>Energy Storage</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <h2>Smart Thermostats</h2>
+   
+      <div class="fakeimg" style="height:240px;"><img src="images/nest.jpg"><img style="padding: 5px"; src="images/ecobee.png">
+          <img style="padding: 5px"; src='images/Nest_PRO_Logo%20(1).jpg'></div>
+      <p>Smart thermostats can, on average, save customers between 10-12 percent on heating and 15 percent on cooling. Based on typical energy costs, Nest estimates that the average customer can expect to save roughly $140 per year on energy bills.</p>
+    
     </div>
   </div>
   <div class="rightcolumn">
     <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h2>Sense Energy Monitor</h2>
+      <div class="fakeimg" style="height:260px;"><img src="images/sense.jpg"></div>
+      <p>Sense is a home energy monitoring system that can tell you how much electricity devices in your home use and help you find problems with energy consumption. If you have solar, Sense also provides real-time monitoring of your panels' production.</p>
     </div>
     <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
+      <h2>EV Charging Stations</h2>
+      <div class="fakeimg" style="height:340px;"><img src="images/evcharger.png"></div>
+      <p>Electric Vehicle charging stations can now be integrated into your smart home to reduce energy consumption during peak hours. During times of high demand on the grid, an electric utility will send Nest a signal to reduce energy usage, and Nest will communicate with ChargePoint Home to slow down the amount of power Home is pushing to your car. </p>
     </div>
     <div class="card">
-      <h3>See if your home is right for Solar</h3>
-      <p><a href="https://sunroof.withgoogle.com/#/p=0">Google's Project Sunroof</a></p>
+     <h3><a href="contact_form.html">Get a Quote</a> </h3>
     </div>
   </div>
 </div>
 
 <div class="footer">
-  <h2>Footer</h2>
+    <h2>Contact</h2>
+    <h5 style="text-align: center">Paul Bradley Electric<br>
+    8 Johnson Rd Winchester, MA 01890<br>
+    781-795-6235<br>
+   pb@paulbradleyelectric.com<br>
+        MA Master Electrician Lic. No.20027A<br>
+        MA Construction Supervisor No.CS-091066</h5>
+    <button  style="float: right"; onclick="toggleDark()">Dark Mode</button> 
 </div>
+
 
  </body>
 </html>
